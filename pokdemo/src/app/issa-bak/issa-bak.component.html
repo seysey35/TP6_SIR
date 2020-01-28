@@ -1,0 +1,11 @@
+<p>issa-bak works!</p>
+<label> input1 </label>
+<input [(ngModel)]="id" >
+<label>input2</label>
+<input disabled  [(ngModel)]="id">
+
+
+<input disabled [(ngModel)]="selection" >
+<select [(ngModel)]="selection">
+    <option *ngFor="let item of MaListe" [value]="item.nom">  {{item.nom}}  </option>
+</select>
